@@ -2,8 +2,6 @@ import React, {createContext, useState, useEffect, useContext} from 'react';
 
 import AsyncStorage from '@react-native-community/async-storage'
 
-import {server} from '../services'
-
 const AuthContext = createContext({ signed: true, user: {}});
 
 export const AuthProvider = ({children}) => {
@@ -33,7 +31,7 @@ export const AuthProvider = ({children}) => {
             setError(false)
             setCarregando(true)
 
-            fetch(`${server}`,{
+            fetch('http://localhost:3000/SuaRota ou https://SuaApi',{
                 method:'post',
                 headers:{
                     'Content-Type':'application/json',
