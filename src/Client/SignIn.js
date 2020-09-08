@@ -16,7 +16,7 @@ const Client = () => {
     /*
       Estou pegando o nome e a senha do useState e enviando para o signIn dessa forma 
       signIn(nome,pass); na linha 14.
-      Pegarei o nome e o password e enviei para a página Context/authContext.js na linha 30
+      Pegarei o nome e a senha(pass) e enviei para a página Context/authContext.js na linha 30
     */
   }
 

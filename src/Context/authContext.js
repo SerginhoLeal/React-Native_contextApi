@@ -8,9 +8,15 @@ export const AuthProvider = ({children}) => {
 
     /*------------ Estados ------------*/
     const [user, setUser] = useState(null);
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
     const [error, setError] = useState(false)
     const [carregando, setCarregando] = useState(false)
+
+    /*
+        Criei dois estados(error e carregando) para que o usuário saiba se 
+        o login está em andamento e se deu algum erro
+    */
+
     /*------------ Estados ------------*/
 
     useEffect(()=>{
@@ -31,7 +37,7 @@ export const AuthProvider = ({children}) => {
             setError(false)
             setCarregando(true)
 
-            fetch('http://localhost:3000/SuaRota ou https://SuaApi',{
+            fetch('sua url',{
                 method:'post',
                 headers:{
                     'Content-Type':'application/json',
@@ -57,6 +63,7 @@ export const AuthProvider = ({children}) => {
 
         /*
             Peguei o nome e o pass e joguei elas na linha 40 e 41.
+            Esse res.error na linha 46 é o tipo de erro que configurei na minha api
         */
 
     /************* Logar *************/
