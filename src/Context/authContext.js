@@ -13,8 +13,11 @@ export const AuthProvider = ({children}) => {
     const [carregando, setCarregando] = useState(false)
 
     /*
-        Criei dois estados(error e carregando) para que o usuário saiba se 
-        o login está em andamento e se deu algum erro
+        Criei dois estados(error e carregando) para que o usuário saiba se o login está em andamento e se deu algum erro.
+        Para ver eles funcionando basta fazer isso{
+            setError(false) na linha 40 e setError(true) na linha 63,
+            setCarregando(true) na linha 41 e setCarregando(false) na linha 59 e 62,
+        }
     */
 
     /*------------ Estados ------------*/
@@ -37,7 +40,7 @@ export const AuthProvider = ({children}) => {
             setError(false)
             setCarregando(true)
 
-            fetch('https://dreamjob-01.herokuapp.com/PwbsOs9YtfLi85clN8Sz',{
+            fetch('sua url',{
                 method:'post',
                 headers:{
                     'Content-Type':'application/json',
