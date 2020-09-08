@@ -13,7 +13,7 @@ export const AuthProvider = ({children}) => {
     const [carregando, setCarregando] = useState(false)
 
     /*
-        Criei dois estados(error e carregando) para que o usuário saiba se o login está em andamento e se deu algum erro.
+        Criei dois estados(error e carregando) para que o usuário saiba se o login está em andamento e se deu algo erro.
         Para ver eles funcionando basta fazer isso{
             setError(false) na linha 42 e setError(true) na linha 65,
             setCarregando(true) na linha 43 e setCarregando(false) na linha 61 e 64,
