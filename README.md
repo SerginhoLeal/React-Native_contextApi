@@ -18,4 +18,8 @@ Tenha essas dependências no seu projeto
 
 > npm install @react-navigation/drawer
 
-### Se tiver alguma duvida é só chamar, (31)9-7556-4133, acho melhor explicar fazendo do que escrevendo aqui 🐱‍🏍🐱‍🏍
+### Segundo passo
+
+Seguir o meu projeto, deixei as partes documentadas junto com o código 
+
+Se tiver alguma duvida é só chamar, (31)9-7556-4133, acho melhor explicar fazendo do que escrevendo aqui 🐱‍🏍🐱‍🏍

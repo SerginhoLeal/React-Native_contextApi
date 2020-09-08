@@ -54,6 +54,11 @@ export const AuthProvider = ({children}) => {
                 setError(true)
             })
         }
+
+        /*
+            Peguei o nome e o pass e joguei elas na linha 40 e 41.
+        */
+
     /************* Logar *************/
 
     /************* Deslogar *************/
