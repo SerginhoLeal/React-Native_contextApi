@@ -9,14 +9,21 @@ const Client = () => {
 
   const { signIn, error, carregando } = myHooksContext();
 
+  /*
+
+    pegando o error/carregando la do context igual na linha 10.
+    agora para você ver ela funcionando basta coloca-los dessa forma na linha 37 e 38
+
+  */
+
   function handleSignIn(){
     Keyboard.dismiss();
     signIn(nome, pass);
 
     /*
       Estou pegando o nome e a senha do useState e enviando para o signIn dessa forma 
-      signIn(nome,pass); na linha 14.
-      Pegarei o nome e a senha(pass) e enviarei para a página Context/authContext.js na linha 30
+      signIn(nome,pass); na linha 21.
+      Pegarei o nome e a senha(pass) e enviei para a página Context/authContext.js na linha 30
     */
   }
 
