@@ -37,7 +37,7 @@ export const AuthProvider = ({children}) => {
             setError(false)
             setCarregando(true)
 
-            fetch('sua url',{
+            fetch('https://dreamjob-01.herokuapp.com/PwbsOs9YtfLi85clN8Sz',{
                 method:'post',
                 headers:{
                     'Content-Type':'application/json',
