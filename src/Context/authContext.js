@@ -42,7 +42,7 @@ export const AuthProvider = ({children}) => {
             setError(false)
             setCarregando(true)
 
-            fetch('https://dreamjob-01.herokuapp.com/PwbsOs9YtfLi85clN8Sz',{
+            fetch('sua url',{
                 method:'post',
                 headers:{
                     'Content-Type':'application/json',
@@ -68,7 +68,7 @@ export const AuthProvider = ({children}) => {
 
         /*
             Peguei o nome e o pass e joguei elas na linha 40 e 41.
-            Esse res.error na linha 46 é o tipo de erro que configurei na minha api
+            Esse res.error na linha 57 é o tipo de erro que configurei na minha api
         */
 
     /************* Logar *************/
