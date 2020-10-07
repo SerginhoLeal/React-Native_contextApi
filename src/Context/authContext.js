@@ -32,7 +32,7 @@ export const AuthProvider = ({children}) => {
             if(storageUser && storageToken){
                 setUser(JSON.parse(storageUser));
                 setLoading(false)
-            }
+            } setLoading(false)//para o caso a pessoa deslogue, o icone de carregar irá sumir
         }
         LoadStorageData();
     },[])
@@ -77,6 +77,7 @@ export const AuthProvider = ({children}) => {
         function signOut(){
             AsyncStorage.clear().then(()=>{
                 setUser(null)
+                setLoading(false)//para a tela de carregamento sumir logo após o logout
             })
         }
     /************* Deslogar *************/
